@@ -2,8 +2,13 @@
 body {
 	text-align: center;
 	background-color: #3C6946;
-	height: 850px;
+	height: auto;
 	font-family: monospace;
+}
+
+canvas { 
+    margin: 0;
+    padding: 0;
 }
 
 #center_content {
@@ -37,7 +42,11 @@ li {
 	margin-right: 40px;
 }
 
-a {
+a.page_credits {
+	color: #000000;
+}
+
+a:not(.page_credits) {
 	font-family: sans-serif;
 	text-transform: capitalize;
 	text-decoration: none;
@@ -45,7 +54,7 @@ a {
 	color: #000000;
 }
 
-a:hover {
+a:hover:not(.page_credits) {
 	border-bottom: 6px solid #307FD3;
 	padding-bottom: 16px;
 	border-radius: 50%;
@@ -60,9 +69,9 @@ img {
 }
 
 img:active {
-	transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
 }
 /* End of Base web page */
 
